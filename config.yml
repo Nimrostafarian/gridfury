@@ -1,0 +1,18 @@
+version: 1
+accounts:
+  - name: treasury
+    coins: ["9000000000000ugrid"]
+  - name: seed
+    coins: ["1000000000000ugrid"]
+validators:
+  - name: treasury
+    bonded: "1000000000000ugrid"
+genesis:
+  app_state:
+    staking:
+      params:
+        bond_denom: "ugrid"
+    crisis:
+      constant_fee:
+        denom: "ugrid"
+        amount: "1000"
